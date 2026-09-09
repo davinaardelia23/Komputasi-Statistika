@@ -30,13 +30,17 @@ dat
 
 # 7. List
 dat_list <- list(
-  Vnum = vec_num,
-  Vint = vec_int,
+  Nilai = c(75,80, 85, 90, 95),
+  Usia = c(15L, 16L, 16L, 15L),
   df = dat,
-  ulang = list(
-    Vnum = vec_num,
-    Vint = vec_int,
-    df = dat
+  hasil = list(
+    Nilai_quiz = c(80, 80, 90, 85, 95),
+    Total_kehadiran= c(10L, 12L, 11L, 12L, 12L),
+    data_rekap = data.frame(
+      Nama = c("Draco", "Tom", "Regulus", "Nott"),
+      Nilai_Owl = c(9, 10, 9, 7),
+      Status = ifelse(c(9, 10, 9, 7) >= 8, "Lulus", "Tidak Lulus" )
+    )
   )
 )
 dat_list
